@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.maaaarckyo.donagoandroid.Activities.PublicUserActivity"
+    android:id="@+id/imgBtnAddPicture">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Videre"
+        android:id="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kvinde"
+        android:id="@+id/rbWoman"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/btnNext"
+        android:layout_toRightOf="@+id/rbMan"
+        android:layout_toEndOf="@+id/rbMan"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mand"
+        android:id="@+id/rbMan"
+        android:layout_alignTop="@+id/rbWoman"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Køn:"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/rbMan"
+        android:layout_alignBottom="@+id/rbMan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFName"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:hint="Fornavn"
+        android:layout_toLeftOf="@+id/rbWoman"
+        android:layout_toStartOf="@+id/rbWoman" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLName"
+        android:hint="Efternavn"
+        android:layout_alignBottom="@+id/etFName"
+        android:layout_toRightOf="@+id/etFName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+
+        android:layout_width="229dp"
+        android:layout_height="250dp"
+        android:id="@+id/imgVPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="229dp"
+        android:layout_height="250dp"
+        android:id="@+id/btnAddPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="tilføj billede" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Danmark"
+        android:id="@+id/tvCountry"
+        android:layout_above="@+id/btnNext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

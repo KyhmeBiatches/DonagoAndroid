@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maaaarckyo.donagoandroid" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".Models.ApplicationStart"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.fitness.API_KEY"
+            android:value="AIzaSyCLLuky_GONw_MSytF_TKZAt5iDc1qPToY" />
+
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".Activities.TotalStepsActivity"
+            android:label="@string/title_activity_total_steps" >
+        </activity>
+        <activity
+            android:name=".Activities.CreateUserActivity"
+            android:label="@string/title_activity_create_user" >
+        </activity>
+        <activity
+            android:name=".Activities.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".Activities.PrivateUserActivity"
+            android:label="@string/title_activity_private_user" >
+        </activity>
+        <activity
+            android:name=".Activities.PublicUserActivity"
+            android:label="@string/title_activity_public_user" >
+        </activity>
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".Activities.SignupLoginActivity"
+            android:label="@string/title_activity_signup_login" >
+        </activity>
+        <activity
+            android:name=".Activities.UserUpdateActivity"
+            android:label="@string/title_activity_user_update" >
+        </activity>
+        <activity android:name=".Activities.StepCountActivity" />
+        <activity
+            android:name=".Activities.HistoryListActivity"
+            android:label="@string/title_activity_history_list" >
+        </activity>
+        <activity
+            android:name=".Activities.NgoListActivity"
+            android:label="@string/title_activity_ngo_list" >
+        </activity>
+        <activity
+            android:name=".Activities.NgoInformationActivity"
+            android:label="@string/title_activity_ngo_information" >
+        </activity>
+        <activity
+            android:name=".Activities.CauseInformationActivity"
+            android:label="@string/title_activity_cause_information" >
+            </activity>
+            <activity
+            android:name=".Activities.UserProfileActivity"
+            android:label="@string/title_activity_user_profile" >
+        </activity>
+    </application>
+
+</manifest>

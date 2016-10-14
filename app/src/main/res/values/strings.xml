@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DonagoAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_create_user">CreateUserActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_private_user">PrivateUserActivity</string>
+    <string name="title_activity_public_user">PublicUserActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_signup_login">SignupLoginActivity</string>
+    <string name="title_activity_start_page">StartPageActivity</string>
+    <string name="title_activity_user_update">UserUpdateActivity</string>
+    <string name="steps">Steps</string>
+    <string name="title_activity_history_list">HistoryListActivity</string>
+    <string name="historyButton">History</string>
+    <string name="title_activity_ngo_list">NgoListActivity</string>
+    <string name="ngoList">Ngo Liste</string>
+    <string name="title_activity_ngo_information">NgoInformation</string>
+    <string name="activityButton">Activity</string>
+    <string name="tw_active_causes">Aktuelle sager</string>
+    <string name="tw_ngo_description">Beskrivelse</string>
+    <string name="title_activity_total_steps">Total Steps</string>
+    <string name="title_activity_new_photo">NewPhotoActivity</string>
+    <string name="tw_cause_contribution">Dit bidrag</string>
+    <string name="tw_cause_contribution_other">Andres bidrag</string>
+    <string name="btn_support_cause">Støt Sag</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cause_information">CauseInformationActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_list_views">ListViews</string>
+    <string name="title_activity_object_tran">ObjectTran</string>
+
+</resources>

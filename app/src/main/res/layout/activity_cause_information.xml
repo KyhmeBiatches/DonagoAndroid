@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.maaaarckyo.donagoandroid.Activities.CauseInformationActivity">
+
+    <FrameLayout
+        android:layout_height="100dp"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/headerFrameLayout">
+
+        <ImageView
+            android:id="@+id/causeImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/donatedMoney"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:shadowDx="-2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"
+            android:gravity="center"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:singleLine="true"
+            android:text="Placeholder"/>
+
+    </FrameLayout>
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_below="@+id/headerFrameLayout"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#8d7a7a7a"
+                android:baselineAligned="false">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/aboutTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#90ffffff"
+                        android:id="@+id/descriptionHeaderFrame">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tw_ngo_description"
+                            android:id="@+id/twCauseDescriptionHeader"
+                            android:layout_gravity="center_horizontal|top"
+                            android:textSize="25dip"
+                            android:textStyle="bold"
+                            android:background="#8d7a7a7a"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Test 1"
+                        android:id="@+id/causeDescription"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/donationsTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#90ffffff"
+                        android:id="@+id/contributionHeaderFrame">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tw_cause_contribution"
+                            android:id="@+id/twContributionHeader"
+                            android:layout_gravity="center_horizontal|top"
+                            android:textSize="25dip"
+                            android:textStyle="bold"
+                            android:background="#8d7a7a7a"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contributionHeaderFrame"
+                        android:id="@+id/yourDonationsFrame">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/twContribution"
+                            android:text="Placeholder: Dine kroner"/>
+
+                        </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yourStepsFrame"
+                        android:layout_below="@+id/yourDonationsFrame">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/twContributedSteps"
+                            android:text="Placeholder: Dine skridt"/>
+
+                        </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#90ffffff"
+                        android:id="@+id/otherContributionsHeaderFrame">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tw_cause_contribution_other"
+                            android:id="@+id/twOtherContributionHeader"
+                            android:layout_gravity="center_horizontal|top"
+                            android:textSize="25dip"
+                            android:textStyle="bold"
+                            android:background="#8d7a7a7a"/>
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_support_cause"
+        android:id="@+id/supportCauseBtn"
+        android:layout_gravity="center_horizontal"
+        android:background="#00FF00"
+        android:clickable="false"
+        android:enabled="true"/>
+
+
+</RelativeLayout>
